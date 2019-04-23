@@ -1,13 +1,13 @@
-var buddyData = [
+var userData = [
     {
         "name": "Steve Zissou",
         "photo": "https://hobbydb-production.s3.amazonaws.com/processed_uploads/subject_photo/subject_photo/image/36906/1518207814-13368-5527/3051336-poster-p-1-the-many-reasons-bill-murray-missed-out-on-major-movies_large.jpg",
-        "scores": [5, 2, 3, 5, 3, 4, 3, 4, 5, 2]
+        "scores": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
     },
     {
         "name": "Klaus Daimler",
         "photo": "https://i.pinimg.com/originals/72/3d/67/723d6778c8002b748dc36dd43136e8aa.jpg",
-        "scores": [3, 3, 2, 1, 1, 1, 1, 5, 5, 3]
+        "scores": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
     },
     {
         "name": "Ned Plimpton",
@@ -27,7 +27,7 @@ var buddyData = [
     {
         "name": "Alistair Hennessey",
         "photo": "https://i.pinimg.com/originals/58/d3/2e/58d32ef9ea342321d4b65e66dd238375.jpg",
-        "scores": [1, 1, 1, 5, 5, 5, 2, 4, 1, 2]
+        "scores": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     },
     {
         "name": "Jane Winslett-Richardson",
@@ -37,28 +37,8 @@ var buddyData = [
     {
         "name": "Eleanor Zissou",
         "photo": "https://i.pinimg.com/originals/32/d5/f7/32d5f7a6c5c9860a3aa330b5205eacf2.jpg",
-        "scores": [2, 1, 4, 4, 3, 2, 1, 1, 1, 2]
+        "scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     },
 ]
 
-var diver;
-var diverPhoto;
-var totalDifference = 0
-
-function selectBuddy () {
-    var currentDifference = 0;
-    for (var i = 0; i < buddyData.length; i++) {
-        for (var j = 0; j < buddyData[i].scores.length; j++) {
-            currentDifference = currentDifference + Math.abs((userData[i].scores[j] - buddyData[i].scores[j]));
-        }
-
-        if (currentDifference < totalDifference) {
-            diver = buddyData[i].name;
-            diverPhoto = buddyData[i].photo;
-        }
-    }
-    console.log("diver is: " + diver + " .");
-}
-
-
-module.exports = buddyData, selectBuddy , diver, diverPhoto;
+module.exports = userData;
