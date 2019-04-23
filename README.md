@@ -5,7 +5,7 @@
 
 ## Technology
 - Javascript, Node, Express
-- Live Demo: 
+- Live Demo: https://salty-wave-31664.herokuapp.com/
 
 ## About
 A node and express application to help match Scuba Divers with dive buddies. Users will complete a 10 question questionaire to rate their dive preferences and skill level in order to find a matching buddy with the most similarities in their responses. Once submitting all answers, the user's name and info will be added to the data pool for future dive buddy searches.
