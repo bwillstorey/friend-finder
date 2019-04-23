@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bwillstorey/friend-finder/issues"
   },
-  "homepage": "https://github.com/bwillstorey/friend-finder#readme"
+  "homepage": "https://github.com/bwillstorey/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
